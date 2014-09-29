@@ -13,7 +13,7 @@ class TCPClient
 		String modifiedSentence;
 		BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
 		//modtager sætningen fra bruger
-		Socket clientSocket = new Socket("172.17.165.98", 6789); //laver en socket
+		Socket clientSocket = new Socket("172.17.140.128", 6789); //laver en socket
 		DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
 		//
 		BufferedReader inFromServer = new BufferedReader(new InputStreamReader(
